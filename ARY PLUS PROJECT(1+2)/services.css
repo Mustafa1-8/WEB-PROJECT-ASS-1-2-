@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0e0e11;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* RESTYLED HEADER SPECIFIC TO SERVICES */
+header {
+    background: linear-gradient(90deg, #18181f 0%, #220508 100%);
+    border-bottom: 2px solid #e50914;
+    padding: 18px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-brand h1 {
+    color: #e50914;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.sub-tag {
+    color: #9f9fa9;
+    font-size: 0.85rem;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #d2d2db;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+/* HERO SECTION */
+.services-hero {
+    text-align: center;
+    padding: 45px 20px 25px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-hero h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.services-hero p {
+    color: #a4a4b0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+/* FLEXBOX CARD CONTAINER (Syllabus Requirement) */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    max-width: 1250px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+/* SERVICE CARD WITH TRANSFORM & TRANSITION (Syllabus Requirement) */
+.service-card {
+    background-color: #17171e;
+    border: 1px solid #2d2d3a;
+    border-radius: 12px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #e50914;
+    box-shadow: 0 14px 28px rgba(229, 9, 20, 0.25);
+}
+
+.featured-plan {
+    border: 2px solid #e50914;
+    background: linear-gradient(180deg, #1f1a20 0%, #17171e 100%);
+}
+
+.card-image-box {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .card-image-box img {
+    transform: scale(1.08);
+}
+
+.card-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid #555;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.card-badge.pop {
+    background-color: #e50914;
+    border-color: #e50914;
+}
+
+.card-content {
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.card-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ff3333;
+    margin-bottom: 12px;
+}
+
+.card-price span {
+    font-size: 0.85rem;
+    color: #8f8f9e;
+    font-weight: normal;
+}
+
+.card-desc {
+    font-size: 0.88rem;
+    color: #adadb9;
+    line-height: 1.45;
+    margin-bottom: 18px;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 22px;
+    flex: 1;
+}
+
+.features-list li {
+    font-size: 0.85rem;
+    color: #d1d1dc;
+    padding: 6px 0;
+    border-bottom: 1px solid #23232e;
+    display: flex;
+    align-items: center;
+}
+
+.features-list li::before {
+    content: "✓";
+    color: #e50914;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* CARD LINK/BUTTON */
+.card-btn {
+    display: block;
+    text-align: center;
+    background-color: #242430;
+    color: #ffffff;
+    padding: 11px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    font-weight: bold;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #313140;
+    transform: translateY(-2px);
+}
+
+.card-btn.highlight {
+    background-color: #e50914;
+}
+
+.card-btn.highlight:hover {
+    background-color: #b80710;
+}
+
+/* FOOTER */
+footer {
+    background-color: #09090b;
+    border-top: 1px solid #22222a;
+    padding: 20px;
+    text-align: center;
+    color: #7d7d8a;
+    font-size: 0.88rem;
+}

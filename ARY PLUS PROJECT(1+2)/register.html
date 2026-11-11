@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARY Plus - Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <header>
+        <h1>ARY PLUS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media & Info</a>
+            <a href="register.html" class="active">Register</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="register-wrapper">
+            
+            <!-- HEADER INFO -->
+            <div class="form-header">
+                <span class="badge">ARY Plus Membership</span>
+                <h2>Create Your Account</h2>
+                <p>Register now to stream your favorite Pakistani dramas, live shows, and uncut episodes anytime.</p>
+            </div>
+
+            <!-- REGISTRATION FORM -->
+            <form class="register-form">
+
+                <!-- SECTION 1: PERSONAL & CREDENTIALS -->
+                <div class="form-section">
+                    <h3 class="section-heading">1. Personal & Login Details</h3>
+
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name"
+                               placeholder="e.g. Farhan Ahmed"
+                               required minlength="3" maxlength="40">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email"
+                                   placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password <span class="required">*</span></label>
+                            <input type="password" id="password" name="password"
+                                   placeholder="At least 8 characters"
+                                   required minlength="8">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="13" max="100" placeholder="18">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 2: VIEWING PREFERENCES -->
+                <div class="form-section">
+                    <h3 class="section-heading">2. Viewing Preferences</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="genre">Favourite Genre</label>
+                            <select id="genre" name="genre">
+                                <option value="">Choose a genre</option>
+                                <option value="drama" selected>Drama</option>
+                                <option value="comedy">Comedy</option>
+                                <option value="romance">Romance</option>
+                                <option value="thriller">Thriller</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Watching Time</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                    </div>
+
+                    <div class="form-group range-group">
+                        <div class="range-header">
+                            <label for="interest">Entertainment Interest Level</label>
+                            <span class="range-hint">1 (Casual) to 10 (Binge Watcher)</span>
+                        </div>
+                        <input type="range" id="interest" name="interest" min="1" max="10" value="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="group-label">Preferred Content Category</label>
+                        <div class="radio-group">
+                            <label class="choice-card">
+                                <input type="radio" name="content" value="family" checked>
+                                <span class="choice-text">Family Shows</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="content" value="comedy">
+                                <span class="choice-text">Comedy & Reality</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="about">About Yourself</label>
+                        <textarea id="about" name="about" rows="3"
+                                  placeholder="Tell us what kind of dramas or actors you love..."></textarea>
+                    </div>
+                </div>
+
+                <!-- SECTION 3: ACCOUNT STATUS & OPTIONS -->
+                <div class="form-section">
+                    <h3 class="section-heading">3. Account Status & Confirmation</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="username">Account Tier</label>
+                            <input type="text" id="username" value="Standard User" readonly class="input-readonly">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status">Account Status</label>
+                            <input type="text" id="status" value="Available (Active)" disabled class="input-disabled">
+                        </div>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <label class="choice checkbox-label">
+                            <input type="checkbox" name="updates" checked>
+                            <span>Yes, send me latest drama release alerts & ARY Plus news.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="submit-btn">Complete Registration</button>
+                
+                <p class="terms-note">
+                    By registering, you agree to the ARY Plus Terms of Service & Privacy Policy.
+                </p>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>ARY Plus - Entertainment for Everyone © 2026</p>
+    </footer>
+
+</body>
+</html>

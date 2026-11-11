@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARY Plus - About & Support</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1>ARY PLUS</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="media.html">Media & Info</a>
+                <a href="register.html">Register</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-layout">
+
+            <!-- ABOUT SECTION -->
+            <section class="about-section">
+                <span class="badge">About Network</span>
+                <h2>Connecting Millions Through Compelling Drama</h2>
+                <p>
+                    ARY Plus is Pakistan’s leading digital on-demand streaming destination, brought to you by the ARY Digital Network. We bring families together with award-winning dramas, live sports, unfiltered entertainment, and unforgettable stories.
+                </p>
+
+                <div class="network-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label">Active Viewers</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Countries Covered</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">1080p</span>
+                        <span class="stat-label">Full HD Quality</span>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h3>Headquarters & Inquiries</h3>
+                    <p><strong>Address:</strong> ARY Communications Ltd, Madina City Mall, Abdullah Haroon Road, Saddar, Karachi, Pakistan.</p>
+                    <p><strong>Support Email:</strong> support@aryplus.tv</p>
+                    <p><strong>UAN Helpline:</strong> +92 (21) 111-279-111</p>
+                    <p><strong>Live Hours:</strong> 24/7 Digital Helpdesk</p>
+                </div>
+            </section>
+
+            <!-- CONTACT FORM SECTION -->
+            <section class="form-section">
+                <h2>Contact & Support Desk</h2>
+                <p class="form-desc">Have a question regarding subscriptions, app streaming, or content feedback? Send us a message.</p>
+
+                <!-- DYNAMIC JAVASCRIPT ALERT BANNER -->
+                <div id="statusMessage" class="status-banner" style="display: none;"></div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" placeholder="Enter your full name">
+                        <small class="error-text" id="nameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email Address <span class="required">*</span></label>
+                        <input type="email" id="userEmail" placeholder="name@example.com">
+                        <small class="error-text" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryType">Topic of Inquiry</label>
+                        <select id="inquiryType">
+                            <option value="subscription">Subscription & Billing</option>
+                            <option value="technical">Video / App Technical Issue</option>
+                            <option value="content">Drama Suggestion & Feedback</option>
+                            <option value="press">Media & Press Inquiries</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMsg">Message <span class="required">*</span></label>
+                        <textarea id="userMsg" rows="4" maxlength="300" placeholder="Type your message here..."></textarea>
+                        <div class="char-count"><span id="charLeft">300</span> characters left</div>
+                        <small class="error-text" id="msgError"></small>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn-submit">Send Message</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>ARY Plus - Entertainment for Everyone © 2026</p>
+    </footer>
+
+    <!-- EXTERNAL JS SCRIPT -->
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    background-color: #121214;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #0a0a0c;
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 2px solid #e50914;
+}
+
+h1 {
+    color: #e50914;
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 8px 14px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.featured {
+    background: linear-gradient(180deg, #242428 0%, #17171a 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e50914;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.featured p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+}
+
+.featured a {
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.featured a:hover {
+    background-color: #b80710;
+    transform: translateY(-2px);
+}
+
+.shows {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shows h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.show-card {
+    display: inline-block;
+    background-color: #1e1e24;
+    border: 1px solid #33333d;
+    margin: 14px;
+    width: 270px;
+    overflow: hidden;
+    vertical-align: top;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.show-card:hover {
+    border-color: #e50914;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(229, 9, 20, 0.25);
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 380px;
+    background-color: #2b2b33;
+    overflow: hidden;
+}
+
+.show-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.show-card:hover img {
+    transform: scale(1.05);
+}
+
+.show-card h3 {
+    color: white;
+    padding: 14px;
+    margin: 0;
+    font-size: 1.1rem;
+    background-color: #17171c;
+}
+
+footer {
+    background-color: #0a0a0c;
+    border-top: 1px solid #23232b;
+    padding: 18px;
+    text-align: center;
+    color: #888894;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
